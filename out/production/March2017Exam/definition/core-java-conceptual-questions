@@ -2,32 +2,119 @@ Please answer the below core-java Questions:
 
 
 What jdk contains or composed of and define each components?
+Ans: java development toolkit and jdk contains jre and jvm.
+
 What is IDE?
+Ans: Integrated Development Environment.
+
 What are the IDEs available in the market to support java?
+Ans: Eclipse, Netbeans, IntelliJ, BlueJ, JCreator.
+
 Explain the entire java life cycle.
+Ans: Editor -> Source code -> Java Compiler(Javac) -> Bytecodes(.class) -> Java Virtual Machine(JVM)-> Operating System.
+
 what is class?
+Ans: A class is blue print or templates for creating different opbjects of a class.
+
 What is object?
+Ans: Object is anything that has state/property and behavior/functionality. Class represent object.
+
 What is the entry point of an application?
+Ans: Main method is the entry point of any java build application.
+
 Why main is static?
+Ans: Because Object is not required to call static method if It were non-static method,jvm create object first then call
+     main() method that will lead to the problem of extra memory allocation.
+
 What is the difference between an Interface and Abstract class?
+Ans: 1) An abstract class can have method body(non-abstract methods). An Interface have only abstract methods.
+     2) An abstract class have constructor.But Interface can not have constructor.
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+Ans: No, if you want to reuse them, you have first inplement them to subclass after that with the help of subclass you can
+     reuse them.
+
 what is Access Specifier?
+Ans: Access Specifier is a java Keyword that defines the level of access on that class, method, variable to outside world.
+
 What is OOP ? Define each feature of java OOP.
+Ans: OOP means Object oriented Programming. OOP properties are as follows-
+    Inheritance: Inheritance is the technique where one object gains the properties of another object.
+    Polymorphism: Polymorphism is the ability of an object to take many form.
+    Encapsulation: Encapsulation is the technique of providing access on private variables or methods through a public method.
+
 What is API? Name list of API that you have used so far.
+Ans: API -> Application Programming Interface
+     List of API are Restfull API, Soup API,CORE Java API, OSGi, JMF, Google, Android, SE, ME , JSP
+
 Does java support multiple inheritance?
+Ans: No
+
 What is method overloading and when it happens?
+Ans: Method overloading allows class to have multiple methods with the same name but different signature type.
+     It happens program compile time.
+
 What is method overriding and when it happens?
+Ans: In java, a method implementation detail can be override in subclass, are known as method overriding. It happens program
+     run time.
+
 Explain exceptions in java and how to handle it.
+Ans: An exception is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.
+     You can handle exception in java two ways try catch and throws.
+
 What is static keyword in java? How it has been used in variables and methods ?
+Ans: The static keyword in Java means that the variable or function is shared between all instances of that class.
+     In class variable or method with static key word, variable can be access by all the methods and the method could
+     be access without class initiation.
+
 What is final and how it has been used variables and methods?
+Ans: Final is a java keyword. In Java we use final keyword to variables or methods to make its values not to be changed.
+
 What is final, finally and finalize?
+Ans: Final: final is a keyword, final can be variable, method or class.You, can't change the value of final variable,
+can't override final method, can't inherit final class.
+     Finally: finally block is used in exception handling. finally block is always executed.
+     Finalize():finalize() method is used in garbage collection.finalize() method is invoked just before the object is
+     garbage collected.The finalize() method can be used to perform any cleanup processing.
+
 What is a constructor ?
+Ans: Constructor is just like a method that is used to initialize the state of an object. It is invoked at the time of
+     object creation.
+
 What is "this" keyword in java ?
+Ans: It is a keyword that that refers to the current object.
+
 What is "super" keyword in java?
+Ans: It is a keyword that refers to the immediate parent class object.
+
 What is JVM stand for ?
+Ans: Java virtual machine.
+
 What version of java are you using?
+Ans: 1.8;
+
 What is JAR stand for ?
+Ans: Java Archive.
+
 What is compile time and run time?
+Ans: A compile time error is a problem such as a syntax error or missing file reference that prevents the program
+     from successfully compiling.
+
+     When an application is executing or running in JVM, it is called runtime.
+
 What is heap?
+Ans: The Java heap is the amount of memory allocated to applications running in the JVM.
+
 How java manage it's memory?
+Ans: Local variables live on the stack
+     – Allocated at method invocation time
+     – Deallocated when method returns
+     Other data lives on the heap
+     – Memory is allocated with new
+     – But never explicitly deallocated
+
 What is the difference between String, StringBuffer and StringBuilder?
+Ans: String: String is an immutable object.
+     StringBuffer: StringBuffer is a mutable object.It is also thread safe.
+     StringBuilder: StringBuilder is a mutable object.StringBuilder is not synchronized.
+

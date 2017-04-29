@@ -145,7 +145,7 @@ public class ConnectDB {
         return data;
     }
 
-    public void InsertDataFromArrayListToMySql(List<Object> list,String tableName, String columnName)
+    public void InsertDataFromArrayListToMySql(int[] list, String tableName, String columnName)
     {
         try {
             connectToMySql();

@@ -4,7 +4,10 @@ import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ProcessStudentInfo {
 
@@ -36,25 +39,33 @@ public class ProcessStudentInfo {
 				String tag = "id";
 
 				//Declare a Map with List<String> into it.
-				
+				Map<String, List<String>> map = new HashMap<String, List<String>>();
 				
 				/*Declare 2 ArrayList with Student data type to store Selenium student into one of the ArrayList and
 				  Qtp student into another ArrayList. */
-				
+				List<Student> sleniumStudent = new ArrayList<Student>();
+
+				List<Student> qtpStudent = new ArrayList<Student>();
 				
 				
 				//Create XMLReader object.
+				XmlReader xmlReader = new XmlReader();
+
 				
 				//Parse Data using parseData method and then store data into Selenium ArrayList.
+				   xmlReader.parseData(tag, "sleniumStudent");
 
 				//Parse Data using parseData method and then store data into Qtp ArrayList.
+				xmlReader.parseData(tag, "qtpStudent");
 				
 				//add Selenium ArrayList data into map.
+				//map.put("sel", "sleniumStudent");
 			
 				//add Qtp ArrayList data into map.
 		
 		      	
 				//Retrieve map data and display output.
+
 
 				
 			}

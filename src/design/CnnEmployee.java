@@ -14,7 +14,12 @@ public class CnnEmployee {
 	 *
 	 **/
 	public static void main(String[] args) {
-		
+		EmployeeInfo emInfo = new EmployeeInfo(5);
+		emInfo = new EmployeeInfo("Mithu", 50);
+		emInfo.computePay();
+		emInfo.unMethod();
+		System.out.println(emInfo.calculateSalary());
+		emInfo.unEmployeeName();
 
 
 	}

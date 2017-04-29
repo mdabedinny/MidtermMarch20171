@@ -1,6 +1,6 @@
 package design;
 
-public class EmployeeInfo{
+public class EmployeeInfo extends UnEmployee implements Employee {
 	
  /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
@@ -17,6 +17,10 @@ public class EmployeeInfo{
 	 * declare few static and final fields and some non-static fields
 	 */
 	static String companyName;
+	final int number=500;
+	long num = 1222222222l;
+	int employeeId;
+	String name;
 	
 	/*
 	 * You must implement the logic for below 2 methods and 
@@ -29,12 +33,17 @@ public class EmployeeInfo{
 	 * Must implement below constructor.
 	 */
 	public EmployeeInfo(int employeeId){
-		
+		this.employeeId=employeeId;
+		System.out.println(this.employeeId);
 	}
     public EmployeeInfo(String name, int employeeId){
-		
+		this.name=name;
+		this.employeeId=employeeId;
+		System.out.println(this.name=name+":"+ this.employeeId);
 	}
-	
+
+
+
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
 	 * Then it will return the total yearly bonus. So you need to implement the logic.
@@ -58,5 +67,44 @@ public class EmployeeInfo{
 	public static int calculateEmployeePension(){
 		int total=0;
 		return total;
+	}
+
+	@Override
+	public int employeeId() {
+		return 0;
+	}
+
+	@Override
+	public String employeeName() {
+		return null;
+	}
+
+	@Override
+	public void assignDepartment() {
+
+	}
+
+	@Override
+	public int calculateSalary() {
+		int salary = 2000;
+		return salary;
+	}
+
+	@Override
+	public void benefitLayout() {
+
+	}
+
+	@Override
+	public double computePay() {
+		int pay=20;
+		System.out.println(pay);
+		return pay;
+	}
+
+	@Override
+	public void unMethod() {
+		super.unMethod();
+		System.out.println("This method come from employeeclassinfo");
 	}
 }

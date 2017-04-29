@@ -61,7 +61,8 @@ public class XmlReader {
 	
 	//This convert method need to be implemented.
 	public String convertIntToChar(String score){
-		String grade = "";
+		String grade = "A";
+		char s = grade.charAt(0);
 		
 		
 		return grade;	
